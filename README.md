@@ -51,3 +51,20 @@ Generate Synthetic Records
         │
         ▼
 Real vs Synthetic Evaluation
+```
+
+## Run Locally
+
+```bash
+python -m pip install -r requirements.txt
+streamlit run app.py
+```
+
+## Deploy to Streamlit Community Cloud
+
+1. Make sure the repository is pushed to GitHub and accessible to your GitHub account.
+2. Sign in to [Streamlit Community Cloud](https://share.streamlit.io/) with GitHub.
+3. Choose **Create app**, select the `confusedgitter/cvd-synthetic-data-generation` repository and the `main` branch.
+4. Set the **Main file path** to `app.py`, then deploy.
+
+The app reads `data/cardio_train.csv` from the repository, and Cloud installs its Python dependencies from `requirements.txt`. Deploying requires access to the GitHub repository.

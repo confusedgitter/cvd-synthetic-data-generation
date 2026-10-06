@@ -1,3 +1,5 @@
+from pathlib import Path
+
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -21,7 +23,7 @@ st.set_page_config(
 # CONSTANTS
 # =========================================================
 
-DATA_PATH = "data/cardio_train.csv"
+DATA_PATH = Path(__file__).parent / "data" / "cardio_train.csv"
 
 FEATURES = [
     "age",
